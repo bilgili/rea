@@ -9,13 +9,13 @@ It does not use the REA source of this repository.
 
 ## Environment variables
 
-| Variable | Default | Rule |
-|---|---|---|
-| `REA_MCP_TRANSPORT` | `stdio` | `stdio` or `http`. Any other value: one error line, exit code 2. |
-| `REA_MCP_AUTH_TOKEN` | none | HTTP only. Required. At least 32 characters. |
-| `REA_MCP_ALLOWED_HOSTS` | none | HTTP only. Required. Comma-separated `Host` names. Letter case and port do not matter. |
-| `REA_MCP_PORT` | `8080` | HTTP only. TCP (Transmission Control Protocol) port. |
-| `REA_MCP_BIND` | `0.0.0.0` | HTTP only. Bind address. |
+| Variable                | Default   | Rule                                                                                   |
+| ----------------------- | --------- | -------------------------------------------------------------------------------------- |
+| `REA_MCP_TRANSPORT`     | `stdio`   | `stdio` or `http`. Any other value: one error line, exit code 2.                       |
+| `REA_MCP_AUTH_TOKEN`    | none      | HTTP only. Required. At least 32 characters.                                           |
+| `REA_MCP_ALLOWED_HOSTS` | none      | HTTP only. Required. Comma-separated `Host` names. Letter case and port do not matter. |
+| `REA_MCP_PORT`          | `8080`    | HTTP only. TCP (Transmission Control Protocol) port.                                   |
+| `REA_MCP_BIND`          | `0.0.0.0` | HTTP only. Bind address.                                                               |
 
 A wrong HTTP configuration makes the process exit with code 1 before REA starts.
 The error text never contains the token.
